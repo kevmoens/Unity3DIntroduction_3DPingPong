@@ -18,6 +18,6 @@ public class Ball : MonoBehaviour {
 	void Start () 
 	{
 		// apply the initial impulse to the ball
-		rigidbody.AddForce(initialImpulse, ForceMode.Impulse);
+		GetComponent<Rigidbody>().AddForce(initialImpulse, ForceMode.Impulse);
 	}
 }
